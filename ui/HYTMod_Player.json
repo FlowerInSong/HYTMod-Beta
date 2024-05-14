@@ -1,0 +1,953 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": true,
+    "title": {
+        "name": "Player",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "show_dividers": true,
+    "radius": 6,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "HYTMod",
+            "color": "#FFFFFF",
+            "size": 14,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_entity_event_manager",
+            "items": [
+                {
+                    "type": "Switch",
+                    "key": "select_hotbar",
+                    "name": "遍历快捷栏",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "select_hotbar_items",
+                    "name": "指定选择物品",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "select_delay",
+                    "format": "选择延迟: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "select_use",
+                    "name": "自动使用",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_select",
+                    "name": "自动选物",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "tower",
+                    "name": "自动上搭",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_destroy_foot",
+                    "name": "自动挖脚",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "Switch",
+                    "key": "drop_armor",
+                    "name": "丢弃低级物品",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "Switch",
+                    "key": "ChargeAura",
+                    "name": "自动充能",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "TextView",
+                    "key": "BuildOb",
+                    "name": "黑曜石围脚",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "cpvp",
+                    "name": "粽子",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "cpvp_mode",
+                    "name": "操作",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Destroy",
+                            "name": "破坏",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Build",
+                            "name": "填充",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "AutoCrystal",
+                    "name": "水晶光环",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "crystal_delay",
+                    "format": "延迟: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "crystal_acount",
+                    "format": "放置数量: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 9
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "SelectCrystal",
+                    "name": "自动选择",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "CrystalTP",
+                    "name": "传送",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "AutoBomb",
+                    "name": "自动重生锚",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "bomb_delay",
+                    "format": "延迟: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "SelectBomb",
+                    "name": "自动选择",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_bed",
+                    "name": "点击围床",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "Switch",
+                    "key": "scaffold",
+                    "name": "自动搭路",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "HYTMod/scaffold_off.png",
+                        "on": "HYTMod/scaffold_on.png",
+                        "icon": "HYTMod/scaffold_on.png"
+                    }
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "scaffold_length",
+                    "format": "长度: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "keep_y",
+                    "name": "保持Y轴",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "scaffold_more",
+                    "name": "反假方块",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "scaffold_move",
+                    "name": "根据移动方向",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "scaffold_up",
+                    "name": "头顶建造",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "scaffold_hyt",
+                    "name": "假方块模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "scaffold_mode",
+                    "name": "避免凭空放置",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "scaffold_auto_block",
+                    "name": "自动补充方块",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "scaffold_origin_block",
+                    "name": "原生选择方块",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "scaffold_pitch",
+                    "name": "包括仰俯角",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "scaffold_sword",
+                    "name": "剑搭",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "scaffold_block",
+                    "format": "方块所在格子: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 0,
+                    "max": 8
+                },
+                {
+                    "type": "Switch",
+                    "key": "click_destroy",
+                    "name": "点击破坏",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "excludeFeet",
+                    "name": "排除脚下方块",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_destroy",
+                    "name": "自动破坏",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "b_excludeFeet",
+                    "name": "排除脚下方块",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "destroy_size",
+                    "format": "大小: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 9
+                },
+                {
+                    "type": "Switch",
+                    "key": "blockin",
+                    "name": "双击blockin",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "Switch",
+                    "key": "no_fall",
+                    "name": "无掉落伤害",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "nofall_mode",
+                    "name": "无伤模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Motion",
+                            "name": "移动值",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Blink",
+                            "name": "停止发包",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "cleaner",
+                    "name": "背包整理",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "HYTMod/cleaner_off.png",
+                        "on": "HYTMod/cleaner_on.png",
+                        "icon": "HYTMod/cleaner_on.png"
+                    }
+                },
+                {
+                    "type": "TextView",
+                    "key": "add_item",
+                    "name": "添加物品",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "cleaner_mode",
+                    "name": "整理模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "drop",
+                            "name": "丢弃",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "save",
+                            "name": "保留",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "drop_delay",
+                    "format": "丢弃延迟: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "max_drop_item",
+                    "format": "最大同时丢弃数量: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 36,
+                    "min": 1,
+                    "max": 36
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_save",
+                    "name": "自动自救",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "autosave_fake_block",
+                    "name": "假方块模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "max_mot_y",
+                    "format": "最大移动值: -%.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1.00,
+                    "min": 0.01,
+                    "max": 5.00
+                },
+                {
+                    "type": "Switch",
+                    "key": "fast_build",
+                    "name": "快速搭路",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "build_distance",
+                    "format": "建造长度: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 4,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "build_tick",
+                    "format": "建造延迟: %dTick",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "Switch",
+                    "key": "low_health_operate",
+                    "name": "低血量操作",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "min_run_heal",
+                    "format": "最低血量: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "low_health_operate_sword",
+                    "name": "使用完自动切剑",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "low_health_operate_mode",
+                    "name": "操作模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Hub",
+                            "name": "退出",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Again",
+                            "name": "重开",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "Flashback",
+                            "name": "闪退",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "Pot",
+                            "name": "喷药",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "Soup",
+                            "name": "喝汤",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "Helmet",
+                            "name": "金头盔",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "suspend",
+                    "name": "悬浮",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "TextView",
+                    "key": "InfiniteBreak",
+                    "name": "百米拆床",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "getBed",
+                    "name": "获取床坐标",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "get_bed_pos",
+                    "name": "计算床坐标",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                }
+            ]
+        }
+    ]
+}

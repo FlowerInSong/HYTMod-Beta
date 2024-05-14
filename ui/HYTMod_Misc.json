@@ -1,0 +1,741 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": true,
+    "title": {
+        "name": "Misc",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "show_dividers": true,
+    "radius": 6,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "HYTMod",
+            "color": "#FFFFFF",
+            "size": 14,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_entity_event_manager",
+            "items": [
+            {
+                    "type": "TextView",
+                    "key": "tp_down",
+                    "name": "向下传送",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "spiral_ascension",
+                    "name": "螺旋升天",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "surround_sound",
+                    "name": "8D音效",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "surround_sound_add",
+                    "name": "类型ID + 1",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "surround_all",
+                    "name": "全部玩家",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "surround_all_entity",
+                    "name": "全部实体",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "surround_exclude_self",
+                    "name": "排除自己",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "surround_loop",
+                    "name": "循环播放",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "surround_sound_type",
+                    "name": "编辑音效类型",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "surround_sound_level",
+                    "name": "编辑音效音调",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "addPlayPos",
+                    "name": "添加播放坐标",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "delete_PlayPos",
+                    "name": "清空播放坐标",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "load_sound",
+                    "name": "加载音频文件",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "select_sound",
+                    "name": "选择音频文件",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "surround_sound_distance",
+                    "format": "环绕距离:%d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "surround_sound_num",
+                    "format": "播放次数:%d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 500
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "surround_sound_vec",
+                    "format": "播放倍速:%d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "InteractAura",
+                    "name": "交互光环",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_breakdown",
+                    "name": "自我崩溃",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_stuck",
+                    "name": "自我掉帧",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fps_rate",
+                    "format": "掉帧程度:%d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 0,
+                    "max": 100
+                },
+                {
+                    "type": "Switch",
+                    "key": "custom_kb",
+                    "name": "自定义KB",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "custom_kb_x",
+                    "format": "远度:%d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "custom_kb_y",
+                    "format": "高度:%.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0.50,
+                    "min": 0.01,
+                    "max": 1.00
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_void",
+                    "name": "自动前往虚空",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "show_activity",
+                    "name": "行为监视器",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "pvp_dalao",
+                    "name": "PVP大佬",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "bellaura",
+                    "name": "敲钟光环",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "sleepaura",
+                    "name": "睡觉光环",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "farmaura",
+                    "name": "种地光环",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "remove_self",
+                    "name": "移除自己",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "fun_other_user",
+                    "name": "作用于点击实体",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "TextView",
+                    "key": "recover",
+                    "name": "恢复",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "arrow_fly",
+                    "name": "弓箭平飞",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "Switch",
+                    "key": "bow_trace",
+                    "name": "弓箭追踪",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "bow_speed",
+                    "format": "弓箭速度:%.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "value": 0.50,
+                    "min": 0.01,
+                    "max": 10.00
+                },
+                {
+                    "type": "Switch",
+                    "key": "attack_self",
+                    "name": "攻击自己",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "TextView",
+                    "key": "attack_self_one",
+                    "name": "攻击自己",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "target_upside_down",
+                    "name": "目标倒立",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "Switch",
+                    "key": "fun_drop",
+                    "name": "随机丢物品",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "Switch",
+                    "key": "fun_hot",
+                    "name": "随机物品栏",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "Switch",
+                    "key": "fun_drop_sword",
+                    "name": "剑气",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "TextView",
+                    "key": "BuildAnvil",
+                    "name": "铁砧卡自己",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "spin",
+                    "name": "陀螺",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            65,
+                            65
+                        ],
+                        "no_circle": true,
+                        "off": "HYTMod/derp_off.png",
+                        "on": "HYTMod/derp_on.png",
+                        "icon": "HYTMod/derp_on.png"
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "random_rot",
+                    "name": "随机旋转",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "spin_speed",
+                    "format": "旋转速度:%d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "value": 5,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "TextView",
+                    "key": "drop_inv",
+                    "name": "丢弃背包",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "kick_self",
+                    "name": "踢出自己",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                }
+            ]
+        }
+    ]
+}

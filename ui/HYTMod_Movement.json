@@ -1,0 +1,916 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": true,
+    "title": {
+        "name": "Movement",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "show_dividers": true,
+    "radius": 6,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "HYTMod",
+            "color": "#FFFFFF",
+            "size": 14,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_entity_event_manager",
+            "items": [
+                {
+                    "type": "Switch",
+                    "key": "freecam",
+                    "name": "灵魂出窍",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "freecam_mode",
+                    "name": "停止发包模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "All",
+                            "name": "全部",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Move",
+                            "name": "移动",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "AntiCheat",
+                            "name": "网易反作弊",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "better_jump",
+                    "name": "更好的跳跃",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_jump",
+                    "name": "自动跳跃",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "jump_strength",
+                    "format": "跳跃高度: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 42,
+                    "min": 0,
+                    "max": 100
+                },
+                {
+                    "type": "Switch",
+                    "key": "airjump",
+                    "name": "自动踏空",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "jump_length",
+                    "format": "速度: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "safewalk",
+                    "name": "安全行走",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "lagback",
+                    "name": "虚空回弹",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "HYTMod/lagback_off.png",
+                        "on": "HYTMod/lagback_on.png",
+                        "icon": "HYTMod/lagback_on.png"
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "lagback_spin",
+                    "name": "拉回旋转",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "lagback_y",
+                    "format": "最小移动值:%.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0.80,
+                    "min": 0.10,
+                    "max": 3.00
+                },
+                {
+                    "type": "Switch",
+                    "key": "longjump",
+                    "name": "长跳",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "longjump_x",
+                    "format": "远度:%d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "longjump_y",
+                    "format": "高度:%.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0.50,
+                    "min": 0.01,
+                    "max": 1.00
+                },
+                {
+                    "type": "Switch",
+                    "key": "jesus",
+                    "name": "水上漂",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "no_water_slowdown",
+                    "name": "无视水流减速",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_speed",
+                    "name": "速度",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "HYTMod/speed_off.png",
+                        "on": "HYTMod/speed_on.png",
+                        "icon": "HYTMod/speed_on.png"
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "bhop",
+                    "name": "BunnyHop",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "bhop_airjump",
+                    "name": "AirHop",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "bhop_mode",
+                    "name": "Bhop模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "single",
+                            "name": "单向",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "multiple",
+                            "name": "多向",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "bhop_heigh",
+                    "format": "Bhop高度: %.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0.40,
+                    "min": 0.00,
+                    "max": 1.00
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "speed",
+                    "format": "速度 %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 30
+                },
+                {
+                    "type": "Switch",
+                    "key": "slowdown",
+                    "name": "缓降",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "slowdown_speed",
+                    "format": "下落速度: %d",
+                    "color": "#FFFFFF",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "fly",
+                    "name": "飞行",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "HYTMod/fly_off.png",
+                        "on": "HYTMod/fly_on.png",
+                        "icon": "HYTMod/fly_on.png"
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fly_up_down",
+                    "name": "蛇形飞行",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fly_run",
+                    "name": "疾跑飞行",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fly_mot",
+                    "name": "移动值归零",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fly_only_fly",
+                    "name": "移动飞行",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fly_block",
+                    "name": "判断方块",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fly_includeY",
+                    "name": "仅Y轴",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "fly_mode",
+                    "name": "移动模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Pos",
+                            "name": "坐标",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Motion",
+                            "name": "移动值",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fly_speed",
+                    "format": "速度: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 20,
+                    "min": 1,
+                    "max": 50
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_sprint",
+                    "name": "自动冲刺",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "HYTMod/sprint_off.png",
+                        "on": "HYTMod/sprint_on.png",
+                        "icon": "HYTMod/sprint_on.png"
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "throw_wall",
+                    "name": "穿墙",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "move_fly",
+                    "name": "移动飞行",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "sprint_horizontal",
+                    "name": "水平移动",
+                    "color": "#6495ED",
+                    "size": 10
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "sprint_mode",
+                    "name": "移动模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Pos",
+                            "name": "坐标",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Motion",
+                            "name": "移动值",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "sprint_speed",
+                    "format": "速度: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "value": 12,
+                    "min": 1,
+                    "max": 50
+                },
+                {
+                    "type": "TextView",
+                    "key": "look_tp",
+                    "name": "传送目之所及",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "look_tp_mode",
+                    "name": "传送模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Motion",
+                            "name": "移动值",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Pos",
+                            "name": "坐标",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "y_up",
+                    "name": "上升",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "y_down",
+                    "name": "下降",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "up_down_speed",
+                    "format": "上下高度: %.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "value": 1.00,
+                    "min": 0.01,
+                    "max": 5.00
+                },
+                {
+                    "type": "TextView",
+                    "key": "rush",
+                    "name": "冲刺",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "rush_length",
+                    "format": "冲刺远度:%d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "value": 5,
+                    "min": 1,
+                    "max": 20
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "name": "显示摇杆",
+            "color": "#FFFFFF",
+            "size": 12,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_ride_flying",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "key": "rocker",
+                    "name": "启用功能",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "rocker_bhop",
+                    "name": "BunnyHop",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "rocker_ahop",
+                    "name": "AirHop",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "rocker_mode",
+                    "name": "移动模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "motion",
+                            "name": "移动值",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "pos",
+                            "name": "坐标",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "rocker_speed",
+                    "format": "移动速度 %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 8,
+                    "min": 1,
+                    "max": 30
+                },
+                {
+                    "type": "Switch",
+                    "key": "hover",
+                    "name": "鞘翅悬停",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,592 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": true,
+    "title": {
+        "name": "HYTMod",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "show_dividers": true,
+    "radius": 6,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "加载HYTMod",
+            "size": 13,
+            "color": "#FFFFFF",
+            "load_script": "HYTMod.js",
+            "tip": "不要多次点击我QwQ",
+            "tag": "fun_entity_event_manager",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "items": [
+                {
+                    "type": "TextView",
+                    "sound": "click.mp3",
+                    "name": "退出脚本",
+                    "color": "#FFFFFF",
+                    "size": 13,
+                    "send_message": "退出",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "disabler",
+                    "sound": "click.mp3",
+                    "name": "暂停HYTMod",
+                    "color": "#FFFFFF",
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "TestModule",
+                    "sound": "click.mp3",
+                    "name": "测试功能",
+                    "color": "#FFFFFF",
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "IQBoost",
+                    "sound": "click.mp3",
+                    "name": "IQBoost",
+                    "color": "#FFFFFF",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_target",
+                    "sound": "click.mp3",
+                    "name": "自动选择目标",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "regex_enable",
+                    "name": "启用正则",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "TextView",
+                    "key": "regex",
+                    "sound": "click.mp3",
+                    "name": "编辑正则",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "lock_target",
+                    "name": "锁定目标",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "check_size",
+                    "name": "检查碰撞箱",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "check_health",
+                    "name": "检查血量",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "check_rot",
+                    "name": "检查视角值",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "check_wall",
+                    "name": "检查墙壁",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "check_name",
+                    "name": "检查名字",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "bypass_bjd",
+                    "name": "绕布吉岛假人",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "includeMob",
+                    "name": "生物",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "includePlayer",
+                    "name": "玩家",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "infinite_distance",
+                    "name": "无限距离",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "max_distance",
+                    "format": "目标最大距离 %.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 6.0,
+                    "min": 1.0,
+                    "max": 20.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "min_distance",
+                    "format": "目标最小距离 %.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 0.0,
+                    "min": 0.0,
+                    "max": 20.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "max_target_num",
+                    "format": "目标数量%d ",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "limit_y",
+                    "format": "最高高度: %d ",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 255,
+                    "min": 1,
+                    "max": 256
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "select_mode",
+                    "name": "选择模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "distance",
+                            "name": "距离最近",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "health",
+                            "name": "血量最少",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "damage",
+                            "name": "伤害最低",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "rot",
+                            "name": "准星最近",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "items",
+                            "name": "背包物品最多",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "random",
+                            "name": "随机",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "on.mp3",
+                    "off_sound": "off.mp3",
+                    "key": "reverse_target",
+                    "name": "反向排序",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "save_config",
+                    "name": "保存配置",
+                    "color": "#6495ED",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "load_config",
+                    "name": "加载配置",
+                    "color": "#6495ED",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "攻击类",
+            "color": "#FFFFFF",
+            "sound": "click.mp3",
+            "size": 13,
+            "open": "HYTMod_Combat",
+            "tip": "记得打开自动选择目标!!",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "移动类",
+            "color": "#FFFFFF",
+            "sound": "click.mp3",
+            "size": 13,
+            "open": "HYTMod_Movement",
+            "tip": "单人游戏可能用不了移动类",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "玩家类",
+            "color": "#FFFFFF",
+            "sound": "click.mp3",
+            "size": 13,
+            "open": "HYTMod_Player",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "事件类",
+            "color": "#FFFFFF",
+            "sound": "click.mp3",
+            "size": 13,
+            "open": "HYTMod_Event",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "娱乐类",
+            "color": "#FFFFFF",
+            "sound": "click.mp3",
+            "size": 13,
+            "open": "HYTMod_Misc",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "辅助类",
+            "color": "#FFFFFF",
+            "sound": "click.mp3",
+            "size": 13,
+            "open": "HYTMod_Auxiliary",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "渲染类",
+            "color": "#FFFFFF",
+            "sound": "click.mp3",
+            "size": 13,
+            "open": "HYTMod_Render",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "生存类",
+            "color": "#FFFFFF",
+            "sound": "click.mp3",
+            "size": 13,
+            "open": "HYTMod_Survive",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "指令类",
+            "color": "#FFFFFF",
+            "sound": "click.mp3",
+            "size": 13,
+            "open": "HYTMod_Message",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        }
+    ]
+}

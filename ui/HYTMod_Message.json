@@ -1,0 +1,198 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": true,
+    "title": {
+        "name": "Message",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "show_dividers": true,
+    "radius": 6,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "缓慢挥手",
+            "color": "#FFFFFF",
+            "size": 13,
+            "run_command": "/set swing slow",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "快速挥手",
+            "color": "#FFFFFF",
+            "size": 13,
+            "run_command": "/set swing fast",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "夜视效果",
+            "color": "#FFFFFF",
+            "size": 13,
+            "plugin_command": "/ww effect 16 99999 255 false",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "移除药效",
+            "color": "#FFFFFF",
+            "size": 13,
+            "plugin_command": "/ww effect clear",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "——切换服务器——",
+            "color": "#FFFFFF",
+            "size": 13,
+            "padding": [
+                6,
+                6,
+                6,
+                6
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "重进逐梦启源",
+            "color": "#FFFFFF",
+            "size": 13,
+            "plugin_command": "/ww server 45.253.201.40 11000",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "重进布吉岛",
+            "color": "#FFFFFF",
+            "size": 13,
+            "plugin_command": "/ww server play.bjd-mc.com 19132",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "重进花雨庭",
+            "color": "#FFFFFF",
+            "size": 13,
+            "plugin_command": "/ww server 42.186.17.118 19132",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "重进EC",
+            "color": "#FFFFFF",
+            "size": 13,
+            "plugin_command": "/ww server 42.186.67.15 19112",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "—————————",
+            "color": "#FFFFFF",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "click.mp3",
+            "name": "设置自己为目标",
+            "color": "#FFFFFF",
+            "size": 13,
+            "run_command": "/target self",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        }
+    ]
+}

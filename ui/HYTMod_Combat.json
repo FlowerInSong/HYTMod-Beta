@@ -1,0 +1,1642 @@
+{
+    "type": "Menu",
+    "color": "#d2000000",
+    "alpha": 0.95,
+    "can_close": true,
+    "title": {
+        "name": "Combat",
+        "elevation": 0,
+        "background": "#000000",
+        "padding": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+        ]
+    },
+    "params": [
+        -2,
+        -2
+    ],
+    "padding": [
+        3,
+        0,
+        3,
+        0
+    ],
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "show_dividers": true,
+    "radius": 6,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "HYTMod",
+            "color": "#FFFFFF",
+            "size": 14,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_entity_event_manager",
+            "items": [
+                {
+                    "type": "Switch",
+                    "key": "no_kb",
+                    "name": "无击退",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "no_kb_resistance_v",
+                    "format": "垂直抗性: %d%%",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 100,
+                    "min": 0,
+                    "max": 100
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "no_kb_resistance_h",
+                    "format": "水平抗性: %d%%",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 100,
+                    "min": 0,
+                    "max": 100
+                },
+                {
+                    "type": "Switch",
+                    "key": "avoid_attack",
+                    "name": "空刀不挥手",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "avoid_throw",
+                    "name": "避免投掷物",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "avoid_distance",
+                    "format": "距离: %.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1.00,
+                    "min": 0.01,
+                    "max": 5.00
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "avoid_mode",
+                    "name": "躲避模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Move",
+                            "name": "移动",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Attack",
+                            "name": "攻击",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "attack_action",
+                    "name": "攻击动作",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "criticals",
+                    "name": "刀刀暴击",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_weapon",
+                    "name": "自动武器",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "attack_aim",
+                    "name": "瞄准攻击",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "aim_attack_cps",
+                    "format": "攻击速度: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "killaura",
+                    "name": "杀戮光环",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "HYTMod/killaura_off.png",
+                        "on": "HYTMod/killaura_on.png",
+                        "icon": "HYTMod/killaura_on.png"
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "killaura_auto_close",
+                    "name": "切服关闭",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "show_cps",
+                    "name": "显示CPS",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "through_wall",
+                    "name": "穿墙攻击",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "killaura_crit",
+                    "name": "下落攻击",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "killaura_infinite",
+                    "name": "无视距离",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "killaura_max_cps",
+                    "format": "最大CPS: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "killaura_min_cps",
+                    "format": "最小CPS: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "killaura_boost",
+                    "format": "杀戮倍数: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 50
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "killaura_Fov",
+                    "format": "视角: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 90,
+                    "min": 0,
+                    "max": 270
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "killaura_empty",
+                    "format": "空刀率: %d%%",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 100
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "killaura_distance",
+                    "format": "距离 %.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 4.00,
+                    "min": 1.00,
+                    "max": 50.00
+                },
+                {
+                    "type": "Switch",
+                    "key": "teams",
+                    "name": "智能队友",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "team_origin",
+                    "name": "使用原生智能队友",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "click_team",
+                    "name": "点击获取队伍",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "team_color",
+                    "name": "判断头盔",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "team",
+                    "name": "编辑队伍",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "getTeams",
+                    "name": "手持羊毛获取队伍",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "click_whitelist",
+                    "name": "点击白名单",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "white_list",
+                    "name": "编辑白名单",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "remove_white_list",
+                    "name": "清除白名单",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "add_range_whitelist",
+                    "name": "范围添加白名单",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "range",
+                    "format": "范围 %d格",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 6,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "TextView",
+                    "key": "add_whitelist",
+                    "name": "添加白名单",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "click_target",
+                    "name": "点击目标",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "add_target",
+                    "name": "添加目标",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        2,
+                        4,
+                        2,
+                        4
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "assistaim",
+                    "name": "辅助瞄准",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "HYTMod/assistaim_off.png",
+                        "on": "HYTMod/assistaim_on.png",
+                        "icon": "HYTMod/assistaim_on.png"
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "assistaim_throw",
+                    "name": "投掷物自瞄",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "assistaim_predict",
+                    "name": "预测自瞄",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "assistaim_mode",
+                    "name": "瞄准模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Lock",
+                            "name": "固定速度",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "Change",
+                            "name": "变化速度",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "assistaim_y",
+                    "format": "Y轴偏移 %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "assistaim_random_xz",
+                    "format": "左右随机偏移幅度 %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "assistaim_random_y",
+                    "format": "上下随机偏移幅度 %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "assistaim_Fov",
+                    "format": "视角 %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 90,
+                    "min": 1,
+                    "max": 270
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "assistaim_aim_speed",
+                    "format": "瞄准速度 %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 20,
+                    "min": 1,
+                    "max": 50
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "assistaim_distance",
+                    "format": "距离 %.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 7.00,
+                    "min": 0.01,
+                    "max": 50.00
+                },
+                {
+                    "type": "Switch",
+                    "key": "CrystalAura",
+                    "name": "攻击水晶",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "CrystalAura_distance",
+                    "format": "离目标距离: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 0,
+                    "max": 9
+                },
+                {
+                    "type": "Switch",
+                    "key": "InfiniteAura",
+                    "name": "百米大刀",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "HYTMod/InfiniteAura_off.png",
+                        "on": "HYTMod/InfiniteAura_on.png",
+                        "icon": "HYTMod/InfiniteAura_on.png"
+                    }
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "server_mode",
+                    "name": "服务器",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "HYT",
+                            "name": "花雨庭",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Normal",
+                            "name": "正常",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "InfiniteAura_mode",
+                    "name": "传送模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Position",
+                            "name": "坐标",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Motion",
+                            "name": "移动值",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "PluginCMD",
+                            "name": "命令",
+                            "color": "#6495ED",
+                            "size": 10
+                        },
+                        {
+                            "key": "TpMenu",
+                            "name": "传送菜单",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "InfiniteAura_back",
+                    "name": "传送回来",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "InfiniteAura_click",
+                    "name": "传送点击",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "InfiniteAura_backclick",
+                    "name": "回来点击",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "InfiniteAura_random",
+                    "name": "随机偏移",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "InfiniteAura_distance",
+                    "format": "最大距离: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 200
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "InfiniteAura_tick",
+                    "format": "延迟: %dTick",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 15,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "InfiniteAura_num",
+                    "format": "攻击次数: %d次",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "rider",
+                    "name": "骑人",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "rider_random",
+                    "name": "随机偏移",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "rider_heigh",
+                    "format": "高度: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 0,
+                    "max": 7
+                },
+                {
+                    "type": "Switch",
+                    "key": "hitbox",
+                    "name": "碰撞箱",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "hitbox_x",
+                    "format": "X: %.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 2.00,
+                    "min": 0.01,
+                    "max": 10.00
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "hitbox_y",
+                    "format": "Y: %.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1.80,
+                    "min": 0.01,
+                    "max": 10.00
+                },
+                {
+                    "type": "Switch",
+                    "key": "blackhole",
+                    "name": "黑洞",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "blackhole_dis",
+                    "format": "黑洞距离: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "lockback",
+                    "name": "锁背",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "HYTMod/kill_off.png",
+                        "on": "HYTMod/kill_on.png",
+                        "icon": "HYTMod/kill_on.png"
+                    }
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "lockback_length",
+                    "format": "距离: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 0,
+                    "max": 12
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "lockback_heigh",
+                    "format": "高度: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 0,
+                    "max": 7
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "RandomLock",
+                    "name": "随机锁定",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "surround",
+                    "name": "环绕",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "surround_mode",
+                    "name": "环绕模式",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Pos",
+                            "name": "坐标",
+                            "color": "#6495ED",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Motion",
+                            "name": "移动值",
+                            "color": "#6495ED",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "surround_speed",
+                    "format": "环绕速度: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "wtap",
+                    "name": "控距",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "wtap_distance",
+                    "format": "距离: %d格",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 7
+                },
+                {
+                    "type": "Switch",
+                    "key": "trace",
+                    "name": "自动追踪",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "trace_speed",
+                    "format": "速度: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 12
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "trace_min_dis",
+                    "format": "最小距离: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 7
+                },
+                {
+                    "type": "Switch",
+                    "key": "kill_message",
+                    "name": "击杀嘲讽",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "text",
+                    "name": "编辑文本",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "fightbot",
+                    "name": "自动战斗",
+                    "color": "#FFFFFF",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fightbot_autoweapon",
+                    "name": "自动武器",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fightbot_scaffold",
+                    "name": "自动搭路",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fightbot_combo",
+                    "name": "自动连击",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fightbot_jump",
+                    "name": "自动跳跃",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fightbot_random_jump",
+                    "name": "随机跳跃",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fightbot_random_move",
+                    "name": "随机左右移动",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fightbot_killaura",
+                    "name": "使用杀戮",
+                    "color": "#6495ED",
+                    "checked": true,
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fightbot_aimbot",
+                    "name": "使用自瞄",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fightbot_wtap",
+                    "name": "使用控距",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fightbot_distance",
+                    "format": "距离: %.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 4.00,
+                    "min": 0.00,
+                    "max": 10.00
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fightbot_jump_rate",
+                    "format": "跳跃概率: %d%%",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 33,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fightbot_pot_health",
+                    "format": "药水最低血量: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fightbot_snowball_rate",
+                    "format": "雪球使用概率: %d%%",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 100
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fightbot_fishhook_rate",
+                    "format": "鱼竿使用概率: %d%%",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 100
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fightbot_move_rate",
+                    "format": "移动概率: %d%%",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 33,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fightbot_speed",
+                    "format": "移动速度: %d",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 30
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fightbot_height",
+                    "format": "跳跃高度: %.2f",
+                    "color": "#6495ED",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0.38,
+                    "min": 0.00,
+                    "max": 1.00
+                }
+            ]
+        }
+    ]
+}
