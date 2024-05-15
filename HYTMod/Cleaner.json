@@ -1,0 +1,92 @@
+[
+    {
+        "namespace": "minecraft:diamond_sword",
+        "aux": 0,
+        "max_num": 1
+    },
+    {
+        "namespace": "minecraft:iron_sword",
+        "aux": 0,
+        "max_num": 1
+    },
+    {
+        "namespace": "minecraft:diamond_helmet",
+        "aux": 0,
+        "max_num": 1
+    },
+    {
+        "namespace": "minecraft:diamond_chestplate",
+        "aux": 0,
+        "max_num": 1
+    },
+    {
+        "namespace": "minecraft:diamond_leggings",
+        "aux": 0,
+        "max_num": 1
+    },
+    {
+        "namespace": "minecraft:diamond_boots",
+        "aux": 0,
+        "max_num": 1
+    },
+    {
+        "namespace": "minecraft:iron_helmet",
+        "aux": 0,
+        "max_num": 1
+    },
+    {
+        "namespace": "minecraft:iron_chestplate",
+        "aux": 0,
+        "max_num": 1
+    },
+    {
+        "namespace": "minecraft:iron_leggings",
+        "aux": 0,
+        "max_num": 1
+    },
+    {
+        "namespace": "minecraft:iron_boots",
+        "aux": 0,
+        "max_num": 1
+    },
+    {
+        "namespace": "minecraft:planks",
+        "aux": 0,
+        "max_num": 64
+    },
+    {
+        "namespace": "minecraft:stone",
+        "aux": 0,
+        "max_num": 64
+    },
+    {
+        "namespace": "minecraft:ender_eye",
+        "aux": 0,
+        "max_num": 1
+    },
+    {
+        "namespace": "minecraft:compass",
+        "aux": 0,
+        "max_num": 1
+    },
+    {
+        "namespace": "minecraft:slime_ball",
+        "aux": 0,
+        "max_num": 1
+    },
+    {
+        "namespace": "minecraft:glass",
+        "aux": 0,
+        "max_num": 42
+    },
+    {
+        "namespace": "minecraft:grass",
+        "aux": 0,
+        "max_num": 15
+    },
+    {
+        "namespace": "minecraft:golden_apple",
+        "aux": 0,
+        "max_num": 1
+    }
+]
