@@ -1,0 +1,13 @@
+{
+    "auto_target": true,
+    "attack_particle": true,
+    "killaura": true,
+    "aimbot_smooth": true,
+    "aimbot": true,
+    "drop_armor": true,
+    "scaffold": false,
+    "keep_y": true,
+    "cleaner_mode": 1,
+    "cleaner": true,
+    "limit_y": 256
+}
